@@ -9,7 +9,7 @@
     <fragment
         android:id="@+id/FirstFragment"
         android:name="dev.jmsaez.concesionariofragment.FirstFragment"
-        android:label="@string/first_fragment_label"
+        android:label="Concesionario"
         tools:layout="@layout/fragment_first">
 
         <action
@@ -22,7 +22,6 @@
     <fragment
         android:id="@+id/SecondFragment"
         android:name="dev.jmsaez.concesionariofragment.SecondFragment"
-        android:label="@string/second_fragment_label"
         tools:layout="@layout/fragment_second">
 
         <action
@@ -32,7 +31,7 @@
     <fragment
         android:id="@+id/infoFragment"
         android:name="dev.jmsaez.concesionariofragment.InfoFragment"
-        android:label="fragment_info"
+        android:label="About Us"
         tools:layout="@layout/fragment_info">
         <action
             android:id="@+id/action_infoFragment_to_FirstFragment"

@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
@@ -60,7 +61,7 @@ public class SecondFragment extends Fragment {
             writeTags();
             writePrice();
 
-
+            Glide.with(this).load(jsonImg.getString(String.valueOf(index))).into(ivPhotos);
             //Instanciamos y definimos una lambda para usar el listener de los eventos de los botones para cargar las imagenes siguientes
             //region imagesbuttons
             Button btSiguiente = view.findViewById(R.id.btSiguiente);
